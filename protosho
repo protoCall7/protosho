@@ -1,0 +1,36 @@
+#!/Users/peter/perl5/perlbrew/perls/perl-5.14.2/bin/perl
+#===============================================================================
+#
+#         FILE: protosho
+#
+#        USAGE: ./protosho
+#
+#  DESCRIPTION: A CLIF SHODAN Interface
+#
+#      OPTIONS: See "protosho help"
+# REQUIREMENTS: Modern::Perl, CLI::Framework, Shodan, Data::Printer
+#         BUGS: ---
+#        NOTES: !!! Modify the shebang to match your environment !!! 
+#       AUTHOR: Peter H. Ezetta (PE), peter.ezetta@zonarsystems.com
+# ORGANIZATION:
+#      VERSION: 1.0
+#      CREATED: 10/12/2012 00:16:03
+#     REVISION: ---
+#===============================================================================
+
+use lib 'lib';
+
+use Modern::Perl;
+use Protosho::Application;
+
+#-------------------------------------------------------------------------------
+#  Check for 'menu' in @ARGV[0].  If it's there, open the console loop and 
+#  start interactive mode.  Otherwise, use CLI mode.
+#-------------------------------------------------------------------------------
+if ( @ARGV && $ARGV[0] eq 'menu' ) {
+	Protosho::Application->run_interactive();
+	shift @ARGV;
+}
+else {
+	Protosho::Application->run();
+}
