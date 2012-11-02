@@ -18,7 +18,7 @@
 #     REVISION: ---
 #===============================================================================
 
-use lib 'lib';
+use lib '../lib';
 
 use Modern::Perl;
 use Protosho::Application;
@@ -28,8 +28,8 @@ use Protosho::Application;
 #  start interactive mode.  Otherwise, use CLI mode.
 #-------------------------------------------------------------------------------
 if ( @ARGV && $ARGV[0] eq 'menu' ) {
-	Protosho::Application->run_interactive();
 	shift @ARGV;
+	Protosho::Application->run_interactive();
 }
 else {
 	Protosho::Application->run();
