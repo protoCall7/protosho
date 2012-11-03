@@ -2,6 +2,12 @@ MANIFEST
 Makefile.PL
 bin/protosho
 lib/Protosho/Application.pm
+lib/Protosho/Commands/ExploitFetch.pm
+lib/Protosho/Commands/ExploitSearch.pm
+lib/Protosho/Commands/IP.pm
+lib/Protosho/Commands/MsfFetch.pm
+lib/Protosho/Commands/MsfSearch.pm
+lib/Protosho/Commands/Search.pm
 INSTALL
 README
 LICENSE
