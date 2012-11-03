@@ -9,5 +9,6 @@ WriteMakefile(
     'PREREQ_PM'    => {
         'Modern::Perl'   => '1.20120521',
         'CLI::Framework' => '0.05',
+		'Shodan::WebAPI' => 0,
     }
 );
