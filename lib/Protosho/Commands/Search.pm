@@ -18,7 +18,6 @@
 package Protosho::Commands::Search;
 use Modern::Perl;
 use base qw( CLI::Framework::Command );
-use 5.010;
 use Data::Printer colored => 1;
 
 sub run {
