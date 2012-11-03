@@ -21,6 +21,8 @@ use Config::Auto;
 use Shodan::WebAPI;
 use base qw( CLI::Framework );
 
+$VERSION = '1.0';
+
 #===  FUNCTION  ================================================================
 #         NAME: command_map
 #      PURPOSE: Main command name to command object mapping
