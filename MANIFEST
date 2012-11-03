@@ -2,3 +2,6 @@ MANIFEST
 Makefile.PL
 bin/protosho
 lib/Protosho/Application.pm
+INSTALL
+README
+protosho.config
