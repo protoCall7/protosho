@@ -7,8 +7,8 @@ WriteMakefile(
     'NAME'         => 'protosho',
     'VERSION_FROM' => 'lib/Protosho/Application.pm',
     'PREREQ_PM'    => {
-        'Modern::Perl'   => '1.20120521',
-        'CLI::Framework' => '0.05',
+        'Modern::Perl'   => 0,
 		'Shodan::WebAPI' => 0,
+        'CLI::Framework' => '0.05',
     }
 );
